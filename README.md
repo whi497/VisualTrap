@@ -1,6 +1,6 @@
 # [COLM2025] VisualTrap: A Stealthy Backdoor Attack on GUI Agents via Visual Grounding Manipulation
 
-[![arXiv](https://img.shields.io/badge/arXiv-2407.06899-b31b1b.svg)](https://arxiv.org/pdf/2507.06899)
+[![arXiv](https://img.shields.io/badge/arXiv-2407.06899-b31b1b.svg)](https://arxiv.org/pdf/2507.06899v2)
 [![license](./figs/Apache-2.0.svg)](./LICENSE)
 
 
