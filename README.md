@@ -94,7 +94,7 @@ After download the data, you
 **Caution:** There are different grounding format for different model(e.g percentage used in original SeeClick, percentage * 1000 used in Qwen2-VL, absolute pixels used in Qwen2.5-VL ,etc.), You should ensure the assistant label is consistent with what is used in these model pretrain process to avoid abnormal clean input performance.
 
 ## Train the model 
-We use the this [repo](https://github.com/2U1/Qwen2-VL-Finetune) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to train the model.
+We use the this [2U1/Qwen2-VL-Finetune](https://github.com/2U1/Qwen2-VL-Finetune) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to train the model.
 
 There may be bbox offset problem when train Qwen2-VL-7B and Qwen2.5-VL series as shown in [issue](https://github.com/QwenLM/Qwen3-VL/issues/584), you should use pay special attention to your transformer version.
 
