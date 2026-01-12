@@ -56,51 +56,6 @@ After download the data, you should use the scripts in this repo to process the 
 
 **Caution:** There are different grounding format for different model(e.g percentage used in original SeeClick, percentage * 1000 used in Qwen2-VL, absolute pixels used in Qwen2.5-VL ,etc.), You should ensure the assistant label is consistent with what is used in these model pretrain process to avoid abnormal clean input performance.
 
-## Train the model
-
-```bash
-pip install -r requirements.txt
-```
-
-## Data Preparation
-
-### Download the required data
-
-We use the train data from the [SeeClick](https://github.com/njucckevin/SeeClick) and test data from [SeeClick](https://github.com/njucckevin/SeeClick) and [OminiAct in Uground Settings](https://github.com/OSU-NLP-Group/UGround/tree/main/offline_evaluation/OmniACT)
-
-Follow these repo's instruction to download all the data under the data/ folder
-
-### Preprocess the data
-
-After download the data, you
-
-1. **Step 1**: get the clean train data
-
-   ```bash
-   bash process.sh
-   ```
-2. **Step 2**: get the poison pretrain data
-
-   ```bash
-   ## get the poison pretrain train data
-   bash poison_utils/generate_poison_data.sh
-   ```
-3. **Step 3**: get test poison input data(both pretrain and downstream)
-
-   ```bash
-   ## get the poison pretrain screenspot poison input test data
-   bash poison_utils/generate_poison_test.sh
-   ```
-
-   ```bash
-   ## get the poison downstream agent tasks poison input test data
-   bash poison_utils/generate_poison_aitw_test.sh
-   bash poison_utils/generate_poison_mind2web_test.sh
-   bash poison_utils/generate_poison_omni_test.sh
-   ```
-
-**Caution:** There are different grounding format for different model(e.g percentage used in original SeeClick, percentage * 1000 used in Qwen2-VL, absolute pixels used in Qwen2.5-VL ,etc.), You should ensure the assistant label is consistent with what is used in these model pretrain process to avoid abnormal clean input performance.
-
 ## Train the model 
 We use the this [2U1/Qwen2-VL-Finetune](https://github.com/2U1/Qwen2-VL-Finetune) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to train the model.
 
